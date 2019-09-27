@@ -8,3 +8,6 @@ if ! [[ "$(terraform version)" == "Terraform v0.12.9" ]] ; then
     sudo mv terraform /usr/local/bin/terraform
     rm terraform_0.12.9_linux_amd64.zip
 fi
+
+curl https://cdn.deislabs.io/porter/latest/install-linux.sh | bash
+export PATH=$PATH:~/.porter
